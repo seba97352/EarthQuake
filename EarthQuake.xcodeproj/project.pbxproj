@@ -1,550 +1,1210 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		C40C45971D7E126100B971B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40C45961D7E126100B971B4 /* AppDelegate.swift */; };
-		C40C45991D7E126100B971B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40C45981D7E126100B971B4 /* ViewController.swift */; };
-		C40C459C1D7E126100B971B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C40C459A1D7E126100B971B4 /* Main.storyboard */; };
-		C40C459F1D7E126100B971B4 /* EarthQuake.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C40C459D1D7E126100B971B4 /* EarthQuake.xcdatamodeld */; };
-		C40C45A11D7E126100B971B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C40C45A01D7E126100B971B4 /* Assets.xcassets */; };
-		C40C45A41D7E126100B971B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C40C45A21D7E126100B971B4 /* LaunchScreen.storyboard */; };
-		C40C45AF1D7E126100B971B4 /* EarthQuakeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40C45AE1D7E126100B971B4 /* EarthQuakeTests.swift */; };
-		C40C45BA1D7E126100B971B4 /* EarthQuakeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40C45B91D7E126100B971B4 /* EarthQuakeUITests.swift */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		C40C45AB1D7E126100B971B4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C40C458B1D7E126100B971B4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C40C45921D7E126100B971B4;
-			remoteInfo = EarthQuake;
-		};
-		C40C45B61D7E126100B971B4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C40C458B1D7E126100B971B4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C40C45921D7E126100B971B4;
-			remoteInfo = EarthQuake;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		C40C45931D7E126100B971B4 /* EarthQuake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EarthQuake.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C40C45961D7E126100B971B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C40C45981D7E126100B971B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C40C459B1D7E126100B971B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C40C459E1D7E126100B971B4 /* EarthQuake.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EarthQuake.xcdatamodel; sourceTree = "<group>"; };
-		C40C45A01D7E126100B971B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C40C45A31D7E126100B971B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		C40C45A51D7E126100B971B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C40C45AA1D7E126100B971B4 /* EarthQuakeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EarthQuakeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C40C45AE1D7E126100B971B4 /* EarthQuakeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthQuakeTests.swift; sourceTree = "<group>"; };
-		C40C45B01D7E126100B971B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C40C45B51D7E126100B971B4 /* EarthQuakeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EarthQuakeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C40C45B91D7E126100B971B4 /* EarthQuakeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthQuakeUITests.swift; sourceTree = "<group>"; };
-		C40C45BB1D7E126100B971B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		C40C45901D7E126100B971B4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C40C45A71D7E126100B971B4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C40C45B21D7E126100B971B4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		C40C458A1D7E126100B971B4 = {
-			isa = PBXGroup;
-			children = (
-				C40C45951D7E126100B971B4 /* EarthQuake */,
-				C40C45AD1D7E126100B971B4 /* EarthQuakeTests */,
-				C40C45B81D7E126100B971B4 /* EarthQuakeUITests */,
-				C40C45941D7E126100B971B4 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		C40C45941D7E126100B971B4 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C40C45931D7E126100B971B4 /* EarthQuake.app */,
-				C40C45AA1D7E126100B971B4 /* EarthQuakeTests.xctest */,
-				C40C45B51D7E126100B971B4 /* EarthQuakeUITests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		C40C45951D7E126100B971B4 /* EarthQuake */ = {
-			isa = PBXGroup;
-			children = (
-				C40C45961D7E126100B971B4 /* AppDelegate.swift */,
-				C40C45981D7E126100B971B4 /* ViewController.swift */,
-				C40C459A1D7E126100B971B4 /* Main.storyboard */,
-				C40C45A01D7E126100B971B4 /* Assets.xcassets */,
-				C40C45A21D7E126100B971B4 /* LaunchScreen.storyboard */,
-				C40C45A51D7E126100B971B4 /* Info.plist */,
-				C40C459D1D7E126100B971B4 /* EarthQuake.xcdatamodeld */,
-			);
-			path = EarthQuake;
-			sourceTree = "<group>";
-		};
-		C40C45AD1D7E126100B971B4 /* EarthQuakeTests */ = {
-			isa = PBXGroup;
-			children = (
-				C40C45AE1D7E126100B971B4 /* EarthQuakeTests.swift */,
-				C40C45B01D7E126100B971B4 /* Info.plist */,
-			);
-			path = EarthQuakeTests;
-			sourceTree = "<group>";
-		};
-		C40C45B81D7E126100B971B4 /* EarthQuakeUITests */ = {
-			isa = PBXGroup;
-			children = (
-				C40C45B91D7E126100B971B4 /* EarthQuakeUITests.swift */,
-				C40C45BB1D7E126100B971B4 /* Info.plist */,
-			);
-			path = EarthQuakeUITests;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		C40C45921D7E126100B971B4 /* EarthQuake */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C40C45BE1D7E126100B971B4 /* Build configuration list for PBXNativeTarget "EarthQuake" */;
-			buildPhases = (
-				C40C458F1D7E126100B971B4 /* Sources */,
-				C40C45901D7E126100B971B4 /* Frameworks */,
-				C40C45911D7E126100B971B4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = EarthQuake;
-			productName = EarthQuake;
-			productReference = C40C45931D7E126100B971B4 /* EarthQuake.app */;
-			productType = "com.apple.product-type.application";
-		};
-		C40C45A91D7E126100B971B4 /* EarthQuakeTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C40C45C11D7E126100B971B4 /* Build configuration list for PBXNativeTarget "EarthQuakeTests" */;
-			buildPhases = (
-				C40C45A61D7E126100B971B4 /* Sources */,
-				C40C45A71D7E126100B971B4 /* Frameworks */,
-				C40C45A81D7E126100B971B4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C40C45AC1D7E126100B971B4 /* PBXTargetDependency */,
-			);
-			name = EarthQuakeTests;
-			productName = EarthQuakeTests;
-			productReference = C40C45AA1D7E126100B971B4 /* EarthQuakeTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		C40C45B41D7E126100B971B4 /* EarthQuakeUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C40C45C41D7E126100B971B4 /* Build configuration list for PBXNativeTarget "EarthQuakeUITests" */;
-			buildPhases = (
-				C40C45B11D7E126100B971B4 /* Sources */,
-				C40C45B21D7E126100B971B4 /* Frameworks */,
-				C40C45B31D7E126100B971B4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C40C45B71D7E126100B971B4 /* PBXTargetDependency */,
-			);
-			name = EarthQuakeUITests;
-			productName = EarthQuakeUITests;
-			productReference = C40C45B51D7E126100B971B4 /* EarthQuakeUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		C40C458B1D7E126100B971B4 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
-				ORGANIZATIONNAME = "Vojtěch Šebek";
-				TargetAttributes = {
-					C40C45921D7E126100B971B4 = {
-						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = UQT23LWZ8B;
-						ProvisioningStyle = Automatic;
-					};
-					C40C45A91D7E126100B971B4 = {
-						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = UQT23LWZ8B;
-						ProvisioningStyle = Automatic;
-						TestTargetID = C40C45921D7E126100B971B4;
-					};
-					C40C45B41D7E126100B971B4 = {
-						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = UQT23LWZ8B;
-						ProvisioningStyle = Automatic;
-						TestTargetID = C40C45921D7E126100B971B4;
-					};
-				};
-			};
-			buildConfigurationList = C40C458E1D7E126100B971B4 /* Build configuration list for PBXProject "EarthQuake" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = C40C458A1D7E126100B971B4;
-			productRefGroup = C40C45941D7E126100B971B4 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				C40C45921D7E126100B971B4 /* EarthQuake */,
-				C40C45A91D7E126100B971B4 /* EarthQuakeTests */,
-				C40C45B41D7E126100B971B4 /* EarthQuakeUITests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		C40C45911D7E126100B971B4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C40C45A41D7E126100B971B4 /* LaunchScreen.storyboard in Resources */,
-				C40C45A11D7E126100B971B4 /* Assets.xcassets in Resources */,
-				C40C459C1D7E126100B971B4 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C40C45A81D7E126100B971B4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C40C45B31D7E126100B971B4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		C40C458F1D7E126100B971B4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C40C45991D7E126100B971B4 /* ViewController.swift in Sources */,
-				C40C459F1D7E126100B971B4 /* EarthQuake.xcdatamodeld in Sources */,
-				C40C45971D7E126100B971B4 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C40C45A61D7E126100B971B4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C40C45AF1D7E126100B971B4 /* EarthQuakeTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C40C45B11D7E126100B971B4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C40C45BA1D7E126100B971B4 /* EarthQuakeUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		C40C45AC1D7E126100B971B4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C40C45921D7E126100B971B4 /* EarthQuake */;
-			targetProxy = C40C45AB1D7E126100B971B4 /* PBXContainerItemProxy */;
-		};
-		C40C45B71D7E126100B971B4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C40C45921D7E126100B971B4 /* EarthQuake */;
-			targetProxy = C40C45B61D7E126100B971B4 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		C40C459A1D7E126100B971B4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C40C459B1D7E126100B971B4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		C40C45A21D7E126100B971B4 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C40C45A31D7E126100B971B4 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		C40C45BC1D7E126100B971B4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		C40C45BD1D7E126100B971B4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		C40C45BF1D7E126100B971B4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = UQT23LWZ8B;
-				INFOPLIST_FILE = EarthQuake/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cecko.ios.EarthQuake;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		C40C45C01D7E126100B971B4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = UQT23LWZ8B;
-				INFOPLIST_FILE = EarthQuake/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cecko.ios.EarthQuake;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		C40C45C21D7E126100B971B4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = UQT23LWZ8B;
-				INFOPLIST_FILE = EarthQuakeTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cecko.ios.EarthQuakeTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EarthQuake.app/EarthQuake";
-			};
-			name = Debug;
-		};
-		C40C45C31D7E126100B971B4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = UQT23LWZ8B;
-				INFOPLIST_FILE = EarthQuakeTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cecko.ios.EarthQuakeTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EarthQuake.app/EarthQuake";
-			};
-			name = Release;
-		};
-		C40C45C51D7E126100B971B4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEVELOPMENT_TEAM = UQT23LWZ8B;
-				INFOPLIST_FILE = EarthQuakeUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cecko.ios.EarthQuakeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = EarthQuake;
-			};
-			name = Debug;
-		};
-		C40C45C61D7E126100B971B4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEVELOPMENT_TEAM = UQT23LWZ8B;
-				INFOPLIST_FILE = EarthQuakeUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cecko.ios.EarthQuakeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = EarthQuake;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		C40C458E1D7E126100B971B4 /* Build configuration list for PBXProject "EarthQuake" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C40C45BC1D7E126100B971B4 /* Debug */,
-				C40C45BD1D7E126100B971B4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C40C45BE1D7E126100B971B4 /* Build configuration list for PBXNativeTarget "EarthQuake" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C40C45BF1D7E126100B971B4 /* Debug */,
-				C40C45C01D7E126100B971B4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		C40C45C11D7E126100B971B4 /* Build configuration list for PBXNativeTarget "EarthQuakeTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C40C45C21D7E126100B971B4 /* Debug */,
-				C40C45C31D7E126100B971B4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		C40C45C41D7E126100B971B4 /* Build configuration list for PBXNativeTarget "EarthQuakeUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C40C45C51D7E126100B971B4 /* Debug */,
-				C40C45C61D7E126100B971B4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-/* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		C40C459D1D7E126100B971B4 /* EarthQuake.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				C40C459E1D7E126100B971B4 /* EarthQuake.xcdatamodel */,
-			);
-			currentVersion = C40C459E1D7E126100B971B4 /* EarthQuake.xcdatamodel */;
-			path = EarthQuake.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
-	};
-	rootObject = C40C458B1D7E126100B971B4 /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>11FB4DE542C9630B00CD3ECD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B1B5D27727BAABEBD067A57F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3A619C1C17C45FBEAB4B3487</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-EarthQuake.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-EarthQuake/Pods-EarthQuake.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>600C2729092CFAC09F0DDAC2</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>[CP] Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-EarthQuake/Pods-EarthQuake-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>6DA7AF4B6AB0C5ADC63854FC</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>[CP] Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>7EDD48B0D384CCCC158B2B46</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B1B5D27727BAABEBD067A57F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B1B5D27727BAABEBD067A57F</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods_EarthQuake.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>C40C458A1D7E126100B971B4</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C40C45951D7E126100B971B4</string>
+				<string>C40C45AD1D7E126100B971B4</string>
+				<string>C40C45B81D7E126100B971B4</string>
+				<string>C40C45941D7E126100B971B4</string>
+				<string>F7641D867CA3BEFA6458001C</string>
+				<string>7EDD48B0D384CCCC158B2B46</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C40C458B1D7E126100B971B4</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastSwiftUpdateCheck</key>
+				<string>0800</string>
+				<key>LastUpgradeCheck</key>
+				<string>0800</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>Vojt&#283;ch &#352;ebek</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>C40C45921D7E126100B971B4</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>8.0</string>
+						<key>DevelopmentTeam</key>
+						<string>UQT23LWZ8B</string>
+						<key>ProvisioningStyle</key>
+						<string>Automatic</string>
+					</dict>
+					<key>C40C45A91D7E126100B971B4</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>8.0</string>
+						<key>DevelopmentTeam</key>
+						<string>UQT23LWZ8B</string>
+						<key>ProvisioningStyle</key>
+						<string>Automatic</string>
+						<key>TestTargetID</key>
+						<string>C40C45921D7E126100B971B4</string>
+					</dict>
+					<key>C40C45B41D7E126100B971B4</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>8.0</string>
+						<key>DevelopmentTeam</key>
+						<string>UQT23LWZ8B</string>
+						<key>ProvisioningStyle</key>
+						<string>Automatic</string>
+						<key>TestTargetID</key>
+						<string>C40C45921D7E126100B971B4</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>C40C458E1D7E126100B971B4</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+				<string>Base</string>
+			</array>
+			<key>mainGroup</key>
+			<string>C40C458A1D7E126100B971B4</string>
+			<key>productRefGroup</key>
+			<string>C40C45941D7E126100B971B4</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>C40C45921D7E126100B971B4</string>
+				<string>C40C45A91D7E126100B971B4</string>
+				<string>C40C45B41D7E126100B971B4</string>
+			</array>
+		</dict>
+		<key>C40C458E1D7E126100B971B4</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>C40C45BC1D7E126100B971B4</string>
+				<string>C40C45BD1D7E126100B971B4</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>C40C458F1D7E126100B971B4</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>C40C45991D7E126100B971B4</string>
+				<string>C40C459F1D7E126100B971B4</string>
+				<string>C40C45971D7E126100B971B4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C40C45901D7E126100B971B4</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>11FB4DE542C9630B00CD3ECD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C40C45911D7E126100B971B4</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>C40C45A41D7E126100B971B4</string>
+				<string>C40C45A11D7E126100B971B4</string>
+				<string>C40C459C1D7E126100B971B4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C40C45921D7E126100B971B4</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>C40C45BE1D7E126100B971B4</string>
+			<key>buildPhases</key>
+			<array>
+				<string>6DA7AF4B6AB0C5ADC63854FC</string>
+				<string>C40C458F1D7E126100B971B4</string>
+				<string>C40C45901D7E126100B971B4</string>
+				<string>C40C45911D7E126100B971B4</string>
+				<string>DD8FCA79C6190B4FC91A1172</string>
+				<string>600C2729092CFAC09F0DDAC2</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>EarthQuake</string>
+			<key>productName</key>
+			<string>EarthQuake</string>
+			<key>productReference</key>
+			<string>C40C45931D7E126100B971B4</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>C40C45931D7E126100B971B4</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>EarthQuake.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>C40C45941D7E126100B971B4</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C40C45931D7E126100B971B4</string>
+				<string>C40C45AA1D7E126100B971B4</string>
+				<string>C40C45B51D7E126100B971B4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C40C45951D7E126100B971B4</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C40C45961D7E126100B971B4</string>
+				<string>C40C45981D7E126100B971B4</string>
+				<string>C40C459A1D7E126100B971B4</string>
+				<string>C40C45A01D7E126100B971B4</string>
+				<string>C40C45A21D7E126100B971B4</string>
+				<string>C40C45A51D7E126100B971B4</string>
+				<string>C40C459D1D7E126100B971B4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>EarthQuake</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C40C45961D7E126100B971B4</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>AppDelegate.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C40C45971D7E126100B971B4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C40C45961D7E126100B971B4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C40C45981D7E126100B971B4</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>ViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C40C45991D7E126100B971B4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C40C45981D7E126100B971B4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C40C459A1D7E126100B971B4</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C40C459B1D7E126100B971B4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C40C459B1D7E126100B971B4</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C40C459C1D7E126100B971B4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C40C459A1D7E126100B971B4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C40C459D1D7E126100B971B4</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C40C459E1D7E126100B971B4</string>
+			</array>
+			<key>currentVersion</key>
+			<string>C40C459E1D7E126100B971B4</string>
+			<key>isa</key>
+			<string>XCVersionGroup</string>
+			<key>path</key>
+			<string>EarthQuake.xcdatamodeld</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+			<key>versionGroupType</key>
+			<string>wrapper.xcdatamodel</string>
+		</dict>
+		<key>C40C459E1D7E126100B971B4</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.xcdatamodel</string>
+			<key>path</key>
+			<string>EarthQuake.xcdatamodel</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C40C459F1D7E126100B971B4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C40C459D1D7E126100B971B4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C40C45A01D7E126100B971B4</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Assets.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C40C45A11D7E126100B971B4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C40C45A01D7E126100B971B4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C40C45A21D7E126100B971B4</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C40C45A31D7E126100B971B4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>LaunchScreen.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C40C45A31D7E126100B971B4</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/LaunchScreen.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C40C45A41D7E126100B971B4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C40C45A21D7E126100B971B4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C40C45A51D7E126100B971B4</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C40C45A61D7E126100B971B4</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>C40C45AF1D7E126100B971B4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C40C45A71D7E126100B971B4</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C40C45A81D7E126100B971B4</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C40C45A91D7E126100B971B4</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>C40C45C11D7E126100B971B4</string>
+			<key>buildPhases</key>
+			<array>
+				<string>C40C45A61D7E126100B971B4</string>
+				<string>C40C45A71D7E126100B971B4</string>
+				<string>C40C45A81D7E126100B971B4</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>C40C45AC1D7E126100B971B4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>EarthQuakeTests</string>
+			<key>productName</key>
+			<string>EarthQuakeTests</string>
+			<key>productReference</key>
+			<string>C40C45AA1D7E126100B971B4</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>C40C45AA1D7E126100B971B4</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>EarthQuakeTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>C40C45AB1D7E126100B971B4</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>C40C458B1D7E126100B971B4</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>C40C45921D7E126100B971B4</string>
+			<key>remoteInfo</key>
+			<string>EarthQuake</string>
+		</dict>
+		<key>C40C45AC1D7E126100B971B4</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>C40C45921D7E126100B971B4</string>
+			<key>targetProxy</key>
+			<string>C40C45AB1D7E126100B971B4</string>
+		</dict>
+		<key>C40C45AD1D7E126100B971B4</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C40C45AE1D7E126100B971B4</string>
+				<string>C40C45B01D7E126100B971B4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>EarthQuakeTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C40C45AE1D7E126100B971B4</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>EarthQuakeTests.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C40C45AF1D7E126100B971B4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C40C45AE1D7E126100B971B4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C40C45B01D7E126100B971B4</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C40C45B11D7E126100B971B4</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>C40C45BA1D7E126100B971B4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C40C45B21D7E126100B971B4</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C40C45B31D7E126100B971B4</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C40C45B41D7E126100B971B4</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>C40C45C41D7E126100B971B4</string>
+			<key>buildPhases</key>
+			<array>
+				<string>C40C45B11D7E126100B971B4</string>
+				<string>C40C45B21D7E126100B971B4</string>
+				<string>C40C45B31D7E126100B971B4</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>C40C45B71D7E126100B971B4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>EarthQuakeUITests</string>
+			<key>productName</key>
+			<string>EarthQuakeUITests</string>
+			<key>productReference</key>
+			<string>C40C45B51D7E126100B971B4</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.ui-testing</string>
+		</dict>
+		<key>C40C45B51D7E126100B971B4</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>EarthQuakeUITests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>C40C45B61D7E126100B971B4</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>C40C458B1D7E126100B971B4</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>C40C45921D7E126100B971B4</string>
+			<key>remoteInfo</key>
+			<string>EarthQuake</string>
+		</dict>
+		<key>C40C45B71D7E126100B971B4</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>C40C45921D7E126100B971B4</string>
+			<key>targetProxy</key>
+			<string>C40C45B61D7E126100B971B4</string>
+		</dict>
+		<key>C40C45B81D7E126100B971B4</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C40C45B91D7E126100B971B4</string>
+				<string>C40C45BB1D7E126100B971B4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>EarthQuakeUITests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C40C45B91D7E126100B971B4</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>EarthQuakeUITests.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C40C45BA1D7E126100B971B4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C40C45B91D7E126100B971B4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C40C45BB1D7E126100B971B4</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C40C45BC1D7E126100B971B4</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_ANALYZER_NONNULL</key>
+				<string>YES</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_DOCUMENTATION_COMMENTS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INFINITE_RECURSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_SUSPICIOUS_MOVES</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>ENABLE_TESTABILITY</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>10.0</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SWIFT_ACTIVE_COMPILATION_CONDITIONS</key>
+				<string>DEBUG</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>C40C45BD1D7E126100B971B4</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_ANALYZER_NONNULL</key>
+				<string>YES</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_DOCUMENTATION_COMMENTS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INFINITE_RECURSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_SUSPICIOUS_MOVES</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>10.0</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Owholemodule</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>C40C45BE1D7E126100B971B4</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>C40C45BF1D7E126100B971B4</string>
+				<string>C40C45C01D7E126100B971B4</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>C40C45BF1D7E126100B971B4</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>3A619C1C17C45FBEAB4B3487</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>DEVELOPMENT_TEAM</key>
+				<string>UQT23LWZ8B</string>
+				<key>INFOPLIST_FILE</key>
+				<string>EarthQuake/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.cecko.ios.EarthQuake</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SWIFT_VERSION</key>
+				<string>3.0</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>C40C45C01D7E126100B971B4</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>EBE4CBBDD5531C459E407E70</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>DEVELOPMENT_TEAM</key>
+				<string>UQT23LWZ8B</string>
+				<key>INFOPLIST_FILE</key>
+				<string>EarthQuake/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.cecko.ios.EarthQuake</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SWIFT_VERSION</key>
+				<string>3.0</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>C40C45C11D7E126100B971B4</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>C40C45C21D7E126100B971B4</string>
+				<string>C40C45C31D7E126100B971B4</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>C40C45C21D7E126100B971B4</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>DEVELOPMENT_TEAM</key>
+				<string>UQT23LWZ8B</string>
+				<key>INFOPLIST_FILE</key>
+				<string>EarthQuakeTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.cecko.ios.EarthQuakeTests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SWIFT_VERSION</key>
+				<string>3.0</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/EarthQuake.app/EarthQuake</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>C40C45C31D7E126100B971B4</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>DEVELOPMENT_TEAM</key>
+				<string>UQT23LWZ8B</string>
+				<key>INFOPLIST_FILE</key>
+				<string>EarthQuakeTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.cecko.ios.EarthQuakeTests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SWIFT_VERSION</key>
+				<string>3.0</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/EarthQuake.app/EarthQuake</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>C40C45C41D7E126100B971B4</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>C40C45C51D7E126100B971B4</string>
+				<string>C40C45C61D7E126100B971B4</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>C40C45C51D7E126100B971B4</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>DEVELOPMENT_TEAM</key>
+				<string>UQT23LWZ8B</string>
+				<key>INFOPLIST_FILE</key>
+				<string>EarthQuakeUITests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.cecko.ios.EarthQuakeUITests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SWIFT_VERSION</key>
+				<string>3.0</string>
+				<key>TEST_TARGET_NAME</key>
+				<string>EarthQuake</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>C40C45C61D7E126100B971B4</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>DEVELOPMENT_TEAM</key>
+				<string>UQT23LWZ8B</string>
+				<key>INFOPLIST_FILE</key>
+				<string>EarthQuakeUITests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.cecko.ios.EarthQuakeUITests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SWIFT_VERSION</key>
+				<string>3.0</string>
+				<key>TEST_TARGET_NAME</key>
+				<string>EarthQuake</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>DD8FCA79C6190B4FC91A1172</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>[CP] Embed Pods Frameworks</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-EarthQuake/Pods-EarthQuake-frameworks.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>EBE4CBBDD5531C459E407E70</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-EarthQuake.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-EarthQuake/Pods-EarthQuake.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7641D867CA3BEFA6458001C</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3A619C1C17C45FBEAB4B3487</string>
+				<string>EBE4CBBDD5531C459E407E70</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>C40C458B1D7E126100B971B4</string>
+</dict>
+</plist>
